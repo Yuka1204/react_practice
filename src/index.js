@@ -1,10 +1,19 @@
-import "./styles.css";
+const name = "ゆか";
+const age = "19";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const message = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message);
+
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func3(10, 20));
